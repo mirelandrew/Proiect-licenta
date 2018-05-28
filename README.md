@@ -1,2 +1,2 @@
 # Proiect-licenta
-Proiectul meu de licenta despre arhitectura serverless
+Proiectul meu de licenta despre arhitectura serverless !
