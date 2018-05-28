@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="/css/login-info.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <section class="main-section">
+        <div class="wrapper">
+            <span><i class="fas fa-user-circle"></i></span>
+            <p class="register-para">Conecteaza-te acum</p>
+            <div class="inputs">
+                <div class="register-section">
+                    <form>
+                        <input type="email" id="register-email" placeholder="Email">
+                        <input type="password" id="register-password" placeholder="Parola">
+                        <input type="password" id="register-password-confirm" placeholder="Confirma Parola">
+                        <input type="text" id="nume" placeholder="Nume Prenume">
+                        <input type="text" id="varsta" placeholder="Varsta">
+                        <select id="gen">
+                            <option selected="true" disabled="disabled">Gen</option>
+                            <option id="masculin" value="Masculin">Masculin</option>
+                            <option id="feminin" value="Feminin">Feminin</option>
+                        </select>
+                        <button id="register" type="button" class="next">Continuare <span id="arrow-span"><i class="arrow right"></i></span></button>
+                    </form>
+                </div><!--END REGISTER-->
+                <div class="login-section">
+                    <form>
+                        <input id="login-email" type="email" placeholder="Email">
+                        <input type="password" id="login-password" placeholder="Parola">
+                        <button id="login" type="button" class="next">Continuare <span id="arrow-span"><i class="arrow right"></i></span></button>
+                    </form>
+                </div><!--END LOGIN SECTION-->
+                <p id="show-register-form">Nu am un cont, înregistrează-mă acum.</p>
+            </div><!--END INPUTS-->
+            <div class="errorMsg"></div>
+        </div><!--END Wrapper-->
+        
+    </section>
+<!-- CONECTARE LA BAZA DE DATE GOOGLE-->
+
+<script  src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<!-- CONECTARE LA BAZA DE DATE GOOGLE
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-firestore.js"></script>
+-->
+<script src="js/connect.js"></script>
+<script src="js/dbhelper.js"></script>
+<script src="js/login-info.js"></script>
+</body>
+</html>

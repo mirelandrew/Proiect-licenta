@@ -1,0 +1,86 @@
+.frame {
+    font-family: 'Montserrat', sans-serif;
+    width: 520px;
+    height: 300px;
+    background: #571845;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+}
+.brand p {
+    color: #FF5733;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.first-row {
+    width: 88%;
+    display:flex;
+}
+.meridian, .data , .ziua {
+    text-align: center;
+    color: #FFC300;
+    width:100%;
+    height: 20px;
+    margin: 5px 5px;
+}
+.ceas {
+    height: 150px;
+    width:450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#C70039;
+}
+.indicator {
+    font-family: 'Orbitron', sans-serif;
+    height: 120px;
+    width: 120px;
+    background: #FFC300;
+    font-size: 4em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.container {
+    text-align: center;
+}
+p, .logo {
+    color: #353A41;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo > i {
+    font-size: 5em;
+}
+.logo > .fa-html5 {
+    
+    color: #F16529;
+}
+.logo > .fa-css3-alt {
+   
+    color: #379AD6;
+}
+.logo > .fa-js {
+    color: #D6BA32;
+}
+
+xmp {
+    text-align: start;
+    color: #2E3D49;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 5px;
+    background-color: #eee;
+    width: 90%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}

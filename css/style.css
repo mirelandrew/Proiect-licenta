@@ -1,0 +1,419 @@
+.wrapper{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+body{
+    margin:0;
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background:#51a3d2;
+    overflow: hidden;
+    height: 49px;
+    
+}
+#sign-class {
+    background: #40C7F6;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.navbar a{
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top:10px;
+    padding: 5px 16px;
+    font-size: 17px;
+}
+.navbar ul{
+    margin: 0 0 0 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.navbar ul li{
+    top:5px;
+}
+
+.navbar a:hover{
+    background-color: #f2f2f2;
+    color: #000;
+    transition: 0.3s;
+}
+
+.side-nav{
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.95;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover{
+    color: #fff;
+    
+}
+.side-nav .btn-close{
+    position: absolute;
+    top:0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main{
+    transition:margin-left 0.5s;
+    overflow: hidden;
+    width: 100%;
+}
+.hero{
+    
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 100%,rgba(0,0,0,0.1) 100%),url(../assets/pic-cover.jpg);
+    background-size: cover;
+}
+#heroP{
+    font-weight: 800;
+    padding-top: 13em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.btn-hero{
+    width: 9em;
+    padding: 1em;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background: #fff;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    
+}
+.btn-hero:hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+    cursor: pointer;
+}
+
+
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.card-hero {
+    margin:1.5em 1.5em;
+    padding: 20px 20px;
+    height: 150px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-hero img {
+    float: left;
+    margin-right: 1.5em;    
+    height: 100%;
+    
+}
+.card-hero p {
+    font-size: 1.2em;
+    
+}
+.card-hero h3 {
+    font-size: 1em;
+}
+.section-cards {
+    padding:30px;
+    
+}
+.sponsor {
+    
+    color: #A4B6C6;
+    background-color: #111;
+}
+.sponsor p {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+#sponsors {
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 150px;
+    font-size: 3em;
+    color: #A4B6C6;
+    background-color: #111;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+#freepay .section-cards {
+  display: flex;
+  justify-content: center;
+}
+.freepay {
+    width: 40vw;
+    text-align: center;
+    color: #02B3E4;
+
+}
+.freepay p {
+    color: #525C97;
+    font-size: 0.9em;
+}
+.card-hero .freepay {
+    display: flex;
+    justify-content:flex-start;
+}
+.proiecte img {
+   height: 150px;
+    width: 50%;
+    
+   margin-right: 5px;
+}
+#contact {
+    padding: 20px 0;
+    height: 200px;
+    color: white;
+    text-align:center;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.4) 100%,rgba(0,0,0,0.4) 100%), url(../assets/envelope.jpg) center  no-repeat;
+    background-size: cover;
+    
+}
+#contact .btn-hero {
+    margin-top: 2em;
+    color:black;
+}
+#avantaj {
+    text-align:center;
+    color: black;
+}
+.first-column {
+    
+    padding: 50px;
+    color: #6CB8E4;
+}
+.first-column span i {
+    font-size: 3em;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    padding-top:20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.first-column p {
+    color: black;
+}
+.second-column img {
+    width:70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+    text-align: center;
+    margin-top:50px;
+    height: 100px;
+    padding: 25px;
+    line-height: 30px;
+    background: #314453;
+    color:white;
+    font-size: 1.2em;
+}
+
+/*   LOGIN PAGE STYLE     */
+
+@media screen and(max-width: 500px ) {
+    
+}
+
+@media screen and (max-width: 750px) {
+    .freepay {
+        width: 100%;
+        margin: 0 0 20px 0;
+        padding: 5px 0;
+    }
+    #freepay .section-cards {
+        display: block;
+        
+    }
+    #freepay h3 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    #freepay .section-cards {
+        margin-top: 10px;
+    }
+    .section-cards {
+        box-sizing: border-box;
+        width: 95vw;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .card-hero h3 {
+        margin-top: 50px;
+    }
+    .card-hero p {
+        margin-top: 20px;
+        font-size: 0.8em;
+    }
+    .card-hero img {
+        margin-left: 0.5em;
+    }
+    .main-cards img {
+        margin-top: 30px;
+        margin-right: 0.5em;
+        margin-left: -0.3em;
+        height: 100px;
+        width: 100px;
+    }
+    .navbar ul a{
+        display: none;
+    }
+}
+@media screen and (min-width:750px)
+{
+    
+    .open-slide {
+        display: none;
+    }
+    #freepay .section-cards {
+        display: flex;
+    }
+    footer span { 
+        margin-right:10px;
+    }
+}
+@media screen and (min-width:992px) {
+    
+    .navbar { 
+        background-color: inherit; 
+    }
+    .navbar a:hover { 
+        background: inherit;
+    }
+    #main { 
+        box-sizing: border-box;
+        padding: 25px 0px 50px 50px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #main .section-cards {
+        width: 35%;
+        padding:0;
+        margin: 0;
+    }
+    #main .card-hero {
+        height: 100px;
+        font-size: 0.8em;
+    }#main .card-hero img {
+        width:130px;
+    }
+    .hero { 
+        max-width: 60%;
+    }
+    .hero, #main .card-hero {
+        border-radius: 8px;
+    }
+}
+@media screen and (min-width:768px) {
+    
+    #avantaj{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0; 
+        margin: 0;
+        
+    }
+    .avantaj-flex { 
+        display: flex;
+        
+    }
+    .first-column {
+        margin-top: 35px;
+    }
+    .first-column p {
+        max-width: 400px;
+        width:90%;
+    }
+    .second-column img {
+        margin-top: 50px;
+        
+        width: 90%;
+        max-width:500px;
+        
+    }
+    .flex-left {
+        order: 1;
+    }
+    .footer-second-column p {
+        margin-bottom: 10px;
+    }
+    .footer-second-column span{
+        
+        font-size: 1.5em;
+    }
+
+}

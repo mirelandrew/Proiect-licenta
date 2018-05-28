@@ -1,0 +1,161 @@
+.calc-frame {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    height: 640px;
+    width: 480px;
+    border: 5px gray solid;
+    background: whitesmoke;
+    margin: 20px auto;
+    padding: 20px;
+    border-top-left-radius: 250px 120px;
+    border-top-right-radius: 250px 120px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "display display display display"
+                         "btn-pwr-on btn-pwr-del calc-brand calc-brand"
+                         "nr7 nr8 nr9 inmultit"
+                         "nr4 nr5 nr6 minus"
+                         "nr3 nr2 nr1 plus"
+                         "nr0 nr0 virgula impartit"
+                         "egal egal egal egal";
+}
+.calc-display {
+    grid-area: display;
+    height: 120px;
+    width: 440px;
+    top:50px;
+    background: #DCE6F2;
+    border: 2px black solid;
+    border-top-left-radius: 50px 40px;
+    border-top-right-radius: 50px 40px;
+    margin: 50px auto 0; 
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 4em;
+    padding: 20px;
+}
+.calc-btn-pwr {
+    height: 70px;
+    width: 70px;
+    margin: 10px auto;
+    border: 2px black;
+    background: black;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.on {
+    grid-area: btn-pwr-on;
+    background: red;
+}
+.del {
+    grid-area: btn-pwr-del;
+    background: black;
+}
+
+.calc-brand {
+    margin-top:30px;
+    grid-area: calc-brand;
+    text-align: center;
+}
+
+.btn {
+    height: 50px;
+    width: 80px;
+    margin: 0 15px;
+    color: red;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p, .logo {
+    color: #353A41;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.logo > i {
+    font-size: 5em;
+}
+.logo > .fa-html5 {
+    
+    color: #F16529;
+}
+.logo > .fa-css3-alt {
+   
+    color: #379AD6;
+}
+.logo > .fa-js {
+    color: #D6BA32;
+}
+xmp {
+    color: #2E3D49;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 5px;
+    background-color: #eee;
+    width: 90%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+.calc-btn-pwr:hover, .btn:hover {
+cursor: pointer;
+}
+.minus { 
+    grid-area: minus;
+}
+.plus {
+    grid-area: plus;
+}
+.inmultit {
+    grid-area: inmultit;
+}
+.impartit {
+    grid-area: impartit;
+}
+.egal {
+    grid-area: egal;
+    width: 93%;
+}
+.virgula {
+    grid-area: virgula;
+}
+.nr0 {
+    grid-area: nr0;
+    width: 85%;
+}
+.nr1 {
+    grid-area: nr1;
+}
+.nr2 {
+    grid-area: nr2;
+}
+.nr3 {
+    grid-area: nr3;
+}
+.nr4 {
+    grid-area: nr4;
+}
+.nr5 {
+    grid-area: nr5;
+}
+.nr6 {
+    grid-area: nr6;
+}
+.nr7 {
+    grid-area: nr7;
+}
+.nr8 {
+    grid-area: nr8;
+}
+.nr9 {
+    grid-area: nr9;
+}

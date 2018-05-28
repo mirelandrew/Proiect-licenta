@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+    <div class="calc-frame">
+      <div class="calc-display"> </div>
+      
+      <div class="calc-btn-pwr on"> ON </div>
+      <div class="calc-btn-pwr del"> DEL </div>
+      <div class="calc-brand"> SF #1 </div>
+
+      <div class="btn nr7" value="7"> 7 </div>
+
+      <div class="btn nr8" value="8"> 8 </div>
+
+      <div class="btn nr9" value="9"> 9 </div>
+
+      <div class="btn inmultit" value="*">  X </div>
+
+      <div class="btn nr4" value="4"> 4 </div>
+
+      <div class="btn nr5" value="5"> 5 </div>
+
+      <div class="btn nr6" value="6"> 6 </div>
+
+      <div class="btn minus" value="-"> - </div>
+
+      <div class="btn nr1" value="1"> 1 </div>
+
+      <div class="btn nr2" value="2"> 2 </div>
+
+      <div class="btn nr3" value="3"> 3 </div>
+
+      <div class="btn plus" value="+"> + </div>
+
+      <div class="btn nr0" value="0"> 0 </div>
+
+      <div class="btn virgula" value="."> , </div>
+
+      <div class="btn impartit" value="/"> / </div>
+      <div class="btn egal" value=""> = </div>
+    </div>
+
+    <p><span class="logo logo-html"><i class="fab fa-html5"></i></span></p>
+    <p>Structura de baza<span style="color:#F16529"> HTML5</span></p>
+
+    <p>Carcasa si display-ul calculatorului</p>
+
+        
+
+    <xmp>
+      
+            Elementul HTML <div> este un element de nivel de bloc care poate fi
+            folosit ca un container pentru gruparea altor elemente HTML.
+            
+             Numele clasei(class="exemplu") poate fi folosit de CSS și JavaScript pentru a efectua
+             anumite stilizari si actiuni pentru elementele cu numele de clasă specificat.
+      
+            <div class="calc-frame"> ---> Carcasa(frame-ul) calculatorului
+            
+            <div class="calc-display"> 34 </div> ---> Display ce afiseaza numarul 34
+    </xmp>
+    
+      <p> Butoanele calculatorului </p>
+      
+    <xmp>
+
+      <div class="calc-btn-pwr on"> ON </div> ---> Buton pornire
+
+      <div class="calc-btn-pwr del"> DEL </div> ---> Buton stergere
+
+      <div class="calc-brand"> JMK SF#10 </div> ---> Modelul
+
+      <div class="btn nr7" value="7"> 7 </div> ---> Buton
+
+      <div class="btn nr8" value="8"> 8 </div> ---> Buton
+
+      <div class="btn nr9" value="9"> 9 </div> ---> Buton
+
+      <div class="btn inmultit" value="*"> X </div> ---> Buton inmultit
+
+      <div class="btn nr4" value="4"> 4 </div> ---> Buton
+
+      <div class="btn nr5" value="5"> 5 </div> ---> Buton
+
+      <div class="btn nr6" value="6"> 6 </div> ---> Buton
+
+      <div class="btn minus" value="-"> - </div> ---> Buton minus
+
+      <div class="btn nr1" value="1"> 1 </div> ---> Buton 
+
+      <div class="btn nr2" value="2"> 2 </div> ---> Buton 
+
+      <div class="btn nr3" value="3"> 3 </div> ---> Buton 
+
+      <div class="btn plus" value="+"> + </div> ---> Buton plus
+
+      <div class="btn nr0" value="0"> 0 </div> ---> Buton 
+
+      <div class="btn virgula" value="."> , </div> ---> Buton virgula
+
+      <div class="btn impartit" value="/"> / </div> ---> Buton impartit
+
+      <div class="btn egal" value="="> = </div> ---> Buton egal
+    
+      </div> ---> Aici se inchide containerul care incapsuleaza frame-ul calculatorului
+  </xmp>
+
+  <p><span class="logo logo-html"><i class="fab fa-css3-alt"></i></span></p>
+  <p>Structura de baza <span style="color:#379AD6"> CSS3</span></p>
+
+  <p>Carcasa calculatorului</p>
+  <p>În primul rând trebuie să creăm carcasa pentru calculatorul nostru. 
+    Partea de sus a calculatorului va avea un arc și partea de jos va avea muchii drepte. </p>
+<xmp>
+                                  Stilurile carcasei:
+
+    .calc-frame {
+      font-family: 'Montserrat', sans-serif;    ---> Font
+
+      font-weight: 600;   ---> Font bold
+
+      height: 640px;    ---> Inaltimea
+
+      width: 480px;   ---> Latimea
+
+      border: 5px gray solid;   ---> Bordura carcasei
+
+      background: whitesmoke;   ---> Culoarea carcasei
+
+      margin: 20px auto;
+      padding: 20px;
+
+      border-top-left-radius: 250px 120px;   ---> Arc
+      border-top-right-radius: 250px 120px;  ---> Arc
+      
+      display: grid;   ---> Layout tip grid
+      justify-content: center;    ---> Centreaza elementele 
+
+      grid-template-areas:    ---> Elementele calculatorului sunt pozitionate
+                                    cu ajutorul acestei grile
+
+      "display display display display"
+      "btn-pwr-on . calc-brand calc-brand"
+      "nr7 nr8 nr9 inmultit"
+      "nr4 nr5 nr6 minus"
+      "nr3 nr2 nr1 plus"
+      "nr0 nr0 virgula impartit"
+      "egal egal egal egal";
+  }
+ 
+</xmp>
+
+  <p>Display</p>
+  <p>Display-ul este zona de output unde se afiseaza suma care a fost calculata(rezultatul)</p>
+
+  <xmp>
+                                  Stilurile display-ului:
+
+      .calc-display {
+      grid-area: display;   ---> Variabila alocata pozitionarii elementului display in grila
+      height: 120px;
+      width: 440px;
+      top:50px;  
+      background: #DCE6F2;    ---> Culoarea display-ului
+      border: 2px black solid;
+      border-top-left-radius: 50px 40px;    ---> Arc
+      border-top-right-radius: 50px 40px;   ---> Arc
+      margin: 50px auto 0; 
+
+      display:flex;   ---> Layout-ul este setatat ca flex pentru a pozitiona elementele afisate 
+                           in coltul din dreapta jos
+
+      justify-content: flex-end;    ---> Pozitioneaza elementul in dreapta
+      align-items: flex-end;    ---> Pozitioneaza elementul jos
+      font-size: 4em;   ---> Marimea fontului
+      padding: 20px;
+  }
+  </xmp>
+
+  <p>Butoane, Model si Power <span style="color:red"> on</span></p>
+  <p>Butonul de power <span style="color:red"> on</span>  porneste calculatorul. In dreapta butonului se afla modelul calculatorului</p>
+  
+  <xmp>
+                                    Stilurile butoanelor:
+
+    .btn {
+      height: 50px;
+      width: 80px;
+      margin: 0 15px;
+      color: red;
+      border: 2px solid black;
+      display: flex;    --->  Butoanele primesc un layout de tip flex
+      justify-content: center;    ---> Centreaza textul butonului pe orizontala
+      align-items: center;    ---> Centreaza textul butonului pe verticala
+  }
+
+                                     Stilurile modelului:
+
+    .calc-brand {
+      margin-top:30px;
+      grid-area: calc-brand;    ---> Variabila alocata pozitionarii elementului display in grila
+      text-align: center;       ---> Textul este centrat in mijlocul div-ului
+  }
+
+                                      Stilurile butonului power:
+
+    .calc-btn-pwr { 
+      height: 70px;
+      width: 70px;
+      margin: 10px auto;
+      border: 2px black;
+      background: black;
+      border-radius: 50%;   ---> Buton este transformat intr-un cerc
+      display:flex;   ---> Butonul primeste un layout de tip flex
+      justify-content: center;    ---> Centreza textul "ON" pe orizontala
+      align-items: center;    ---> Centreaza textul "ON" pe verticala
+      color: white;
+  }
+                                      Stilurile butonului on: 
+
+    .on {
+      grid-area: btn-pwr-on;    ---> Variabila alocata pozitionarii elementului display in grila
+      background: red;    ---> Butonul rosu
+  }
+
+                                     Stilurile butonului DEL: 
+
+  .del {
+    grid-area: btn-pwr-del;   ---> Variabila alocata pozitionarii elementului display in grila
+    background: black;      ---> Butonul negru
+}
+  </xmp>
+
+  <p>Pozitionare</p>
+  <p>Fiecare container primeste cate o variabila pentru pozitionarea acestora in grila</p>
+  <xmp>
+
+    .minus { 
+        grid-area: minus;
+    }
+    .plus {
+        grid-area: plus;
+    }
+    .inmultit {
+        grid-area: inmultit;
+    }
+    .impartit {
+        grid-area: impartit;
+    }
+    .egal {
+        grid-area: egal;
+        width: 93%;
+    }
+    .virgula {
+        grid-area: virgula;
+    }
+    .nr0 {
+        grid-area: nr0;
+        width: 85%;
+    }
+    .nr1 {
+        grid-area: nr1;
+    }
+    .nr2 {
+        grid-area: nr2;
+    }
+    .nr3 {
+        grid-area: nr3;
+    }
+    .nr4 {
+        grid-area: nr4;
+    }
+    .nr5 {
+        grid-area: nr5;
+    }
+    .nr6 {
+        grid-area: nr6;
+    }
+    .nr7 {
+        grid-area: nr7;
+    }
+    .nr8 {
+        grid-area: nr8;
+    }
+    .nr9 {
+        grid-area: nr9;
+    }
+  </xmp>
+
+    <p><span class="logo logo-js"><i class="fab fa-js"></i></span></p>
+    <p>Adaugarea funcționalitații utilizând <span style="color:#D6BA32"> Javascript</span></p>
+
+    <xmp>
+                                Declararea constantelor:
+        
+        const display = document.querySelector(".calc-display"); 
+        const buton = document.querySelectorAll(".btn");   
+        const del = document.querySelector(".del");
+
+        Este atasat listenerul "click" elementului del:
+                        🡻
+        del.addEventListener("click", function() {    
+               
+                Reseteaza textul display-ului:
+                            🡻    
+                display.innerHTML = "";  
+        });
+        
+        Se ataseaza cate un listener "click" pentru fiecare buton care apartine clasei .btn:
+                                     🡻
+        buton.forEach(x => x.addEventListener("click", function () { 
+
+            "this" se refera la butonul care este apasat in acel moment
+         variabila se initializeaza cu valoarea butonului care este apasat:
+                       🡻
+        let valoare = this.getAttribute("value"); 
+
+        Display-ul afiseaza valoarea butonului apasat:
+                        🡻
+            display.innerHTML+=valoare;
+
+            Daca butonul apasat are clasa "btn egal" atunci este afisat rezultatul pe display:
+                              🡻 
+            if (this.getAttribute("class") == "btn egal") {
+                Este evaluata operatia afisata pe display:
+                                 🡻 
+                let rezultat = eval(display.textContent);
+                
+                Daca lungimea rezultatului este mai mare ca numarul 10 atunci acesta este scurtat:
+                                    🡻 
+                if( rezultat.toString().length > 10 ) {
+                let rezultatNou = parseFloat(rezultat).toFixed(8);
+                display.innerHTML = rezultatNou;
+                } else {
+                display.innerHTML = rezultat;
+                    }
+                    }
+                })
+            );
+
+    </xmp>
+  <script src="js/script.js"></script>
+  </body>
+  
+</html>

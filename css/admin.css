@@ -1,0 +1,26 @@
+.statistici {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card-statistici {
+    display: flex;
+    justify-content: space-between;
+    background: red;
+    border-radius: 10px;
+    
+}
+.col-1 {
+    padding: 15px 70px;
+    text-align: center;
+}
+.col-2 {
+    width: 80px;
+    background: yellow;
+}
+.statistici  .fas {
+    margin-top:17px;
+    font-size: 3em;
+
+}
