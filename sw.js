@@ -15,9 +15,9 @@ const cacheFiles = [
     './assets/pic-js-1.jpg',
     './css/style.css',
     './js/script.js',
+    'https://unpkg.com/lazysizes@4.0.2/lazysizes.js',
     './sw.js',
-    'https://fonts.googleapis.com/css?family=Montserrat',
-    'https://use.fontawesome.com/releases/v5.0.8/css/all.css'
+    'https://fonts.googleapis.com/css?family=Montserrat'
     
 ];
     
