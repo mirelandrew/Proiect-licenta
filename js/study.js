@@ -35,8 +35,11 @@ logOutButton.addEventListener("click", logOut);
 
 // FUNCTIA DE LOGOUT
 function logOut() {
+    //cand este apelata functia de logout se calculeaza cat timp a stat userul online si se actualizeaza timpul in baza de date
     let endSesiune = new Date();
     DBHelper.updateTime(diferentaTimp,endSesiune,startSesiune);
+
+    //Functia este Async deci trebuie sa asteptam ~1s pana se apeleaza functia de scriere(tot async) in baza de date 
     setTimeout(() => {
         DBHelper.logoutUser();
     }, 1000);

@@ -1,18 +1,4 @@
-// ADD SERVICE WORKER
-/*
-if('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-    navigator.serviceWorker
-        .register('./sw.js')
-        .then(function(reg) {
-            console.log("serv worker registered", reg);
-        })
-        .catch(function(err) {
-            console.log("error ", err);
-        })
-    });
-  }
-*/
+
 // implementare navbar slide
 const openButton = document.querySelector(".open-slide");
 const closeButton = document.querySelector(".btn-close");
